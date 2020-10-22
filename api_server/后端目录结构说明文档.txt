@@ -1,0 +1,7 @@
+api_server目录结构说明:
+constroler 业务处理模块
+db 数据库模块
+router 路由模块
+images 接口中提供的图片（images目录和里面的图片不能修改和删除，
+因为db 数据库模块中 data.json中数据的图片位置是引入的这里的图片）
+app.js 启动后端程序文件
