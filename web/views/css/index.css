@@ -1,0 +1,185 @@
+/* header */
+
+.header {
+    height: 0.8125rem;
+    width: 100%;
+    background-color: #446adf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.header::nth-child(0) {
+    width: 0.25rem;
+}
+
+.post {
+    width: 0.525rem;
+    height: 0.4125rem;
+    margin-left: 0.225rem;
+    vertical-align: middle;
+}
+
+.header::nth-child(3) {
+    width: 0.25rem;
+    text-align: center;
+}
+
+.logo {
+    width: 1.4375rem;
+    height: 0.5rem;
+    vertical-align: middle;
+}
+
+.header::nth-child(2) {
+    flex: 1;
+}
+
+.server {
+    width: 0.375rem;
+    height: 0.375rem;
+    margin-right: 0.175rem;
+    vertical-align: middle;
+}
+
+
+/* conter*/
+
+.conter {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.8rem;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+
+/* banner */
+
+.banner {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 2.125rem; */
+    /* height: 2.5rem; */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 就业课区域 */
+
+.job_class {
+    width: 100%;
+    height: 3.6rem;
+    margin-top: 0.2rem;
+    background-color: #ffffff;
+}
+
+.job_header,
+.tiny_header {
+    color: #446ADF;
+    font-size: 0.225rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.job_header i,
+.tiny_header i {
+    width: 0.025rem;
+    height: 0.025rem;
+    border-radius: 0.0625rem;
+    background-color: #446ADF;
+    margin: 0.0625rem;
+    display: block;
+}
+
+.job_img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.job_a {
+    box-sizing: border-box;
+    width: 33%;
+    text-align: center;
+}
+
+.job_a img {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+}
+
+.tiny_class {
+    width: 100%;
+    margin-top: 0.2rem;
+    background-color: #ffffff;
+}
+
+.tiny_img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+}
+
+.tiny_a {
+    box-sizing: border-box;
+    width: 49%;
+    text-align: center;
+    padding: 0.125rem
+}
+
+.tiny_a img {
+    border-radius: 0.25rem;
+    width: 4.4rem;
+    height: 3rem;
+}
+
+.tiny_name {
+    font-size: 0.2rem;
+    color: #333333;
+    float: left;
+    padding-left: 0.25rem;
+}
+
+.tinyh {
+    width: 100%;
+    float: left;
+    display: flex;
+    /* flex-direction: row;
+     justify-content: space-between; */
+    position: relative;
+}
+
+.stunum {
+    /* float: left; */
+    padding-left: 0.25rem;
+    color: #d0d0d0;
+    font-size: 0.175rem;
+    line-height: 0.175rem
+}
+
+.money {
+    position: absolute;
+    right: 0;
+    color: #446ADF;
+    font-size: 0.175rem;
+    line-height: 0.175rem;
+    padding-right: 0.375rem;
+}
+
+
+/* 底部区域 */

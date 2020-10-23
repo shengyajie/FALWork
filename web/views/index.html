@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="./js/flexible.js"></script>
+
+
+</head>
+
+<body>
+    <!-- header区域 -->
+    <div class="header">
+        <div>
+            <img class="post" src="./images/邮件.png" alt="">
+        </div>
+        <div>
+            <img class="logo" src="./images/logo.png">
+        </div>
+        <div>
+            <img class="server" src="./images/server.png">
+        </div>
+    </div>
+    <div class="conter">
+        <!-- banner区域 -->
+        <div class="banner">
+            <img src="./images/FE.png">
+        </div>
+        <!-- 就业课区域 -->
+        <nav class="job_class">
+            <div class="job_header">
+                <i></i> 就业微课
+                <i></i>
+            </div>
+            <div class="job_img">
+                <a class="job_a" href=""><img src="./images/python.png"></a>
+                <a class="job_a" href=""><img src="./images/python.png"></a>
+                <a class="job_a" href=""><img src="./images/data.png"></a>
+                <a class="job_a" href=""><img src="./images/fe-list.png"></a>
+                <a class="job_a" href=""><img src="./images/java.png"></a>
+                <a class="job_a" href=""><img src="./images/ui.png"></a>
+            </div>
+        </nav>
+        <!-- 微课区域 -->
+
+        <nav class="tiny_class">
+            <div class="tiny_header">
+                <i></i> 微课区域
+                <i></i>
+            </div>
+            <div class="tiny_img">
+                <!-- <a class="tiny_a" href=""><img src="./images/python.png">
+                    <h3 class="tiny_name">[前端]应用小程序</h3>
+                    <div class="tinyh">
+                        <h4 class="stunum">30人学习</h4>
+                        <h4 class="money">$999</h4>
+                    </div>
+                </a>
+                <a class="tiny_a" href=""><img src="./images/python.png">
+                    <h3 class="tiny_name">[前端]应用小程序</h3>
+                    <div class="tinyh">
+                        <h4 class="stunum">30人学习</h4>
+                        <h4 class="money">$999</h4>
+                    </div>
+                </a>
+                <a class="tiny_a" href=""><img src="./images/python.png">
+                    <h3 class="tiny_name">[前端]应用小程序</h3>
+                    <div class="tinyh">
+                        <h4 class="stunum">30人学习</h4>
+                        <h4 class="money">$999</h4>
+                    </div>
+                </a>
+                <a class="tiny_a" href=""><img src="./images/python.png">
+                    <h3 class="tiny_name">[前端]应用小程序</h3>
+                    <div class="tinyh">
+                        <h4 class="stunum">30人学习</h4>
+                        <h4 class="money">$999</h4>
+                    </div>
+                </a> -->
+            </div>
+        </nav>
+    </div>
+    <!-- 底部区域 -->
+    <div class="footer">
+        <a class="fooindex" href="./index.html"><img src="./images/首页.png" alt=""><span>首页</span></a>
+        <a class="foofenlei" href="./category.html"><img src="./images/fenlei.png" alt=""><span>分类</span></a>
+    </div>
+    <script type="text/html" id="tinyA">
+        {{each data}}
+        <a class="tiny_a" href=""><img src="{{$value.img}}">
+            <h3 class="tiny_name">{{$value.name}}</h3>
+            <div class="tinyh">
+                <h4 class="stunum">{{$value.count}}</h4>
+                <h4 class="money">{{$value.price}}</h4>
+            </div>
+        </a>
+        {{/each}}
+    </script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
