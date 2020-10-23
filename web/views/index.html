@@ -3,108 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>首页</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./layui/css/layui.css" />
+
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
-
-    <script src="./js/flexible.js"></script>
-
-
 </head>
 
 <body>
+
+
+
     <!-- header区域 -->
-    <div class="header">
-        <div>
-            <img class="post" src="./images/邮件.png" alt="">
+    <header>
+        <div class="layui-row head">
+            <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 post">
+                <img src="./images/邮件.png">
+            </div>
+            <div class="layui-col-xs8 layui-col-sm8 layui-col-md8 logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="layui-col-xs2 layui-col-sm2 layui-col-md2 server">
+                <img src="./images/server.png">
+            </div>
         </div>
-        <div>
-            <img class="logo" src="./images/logo.png">
-        </div>
-        <div>
-            <img class="server" src="./images/server.png">
-        </div>
-    </div>
-    <div class="conter">
+    </header>
+    <!-- body区域 -->
+    <div class="layui-fluid bodyer">
         <!-- banner区域 -->
-        <div class="banner">
-            <img src="./images/FE.png">
+        <div class="layui-row banner">
         </div>
         <!-- 就业课区域 -->
-        <nav class="job_class">
-            <div class="job_header">
-                <i></i> 就业微课
-                <i></i>
+        <div class="layui-card JobClass">
+            <!-- <div class="layui-card-header JobText"><span class="layui-badge-dot layui-bg-blue"></span>就业课<span class="layui-badge-dot layui-bg-blue"></span></div> -->
+            <div class="layui-card-header JobText">
+                <div class="bdots"></div>
+                就业课
+                <div class="bdots"></div>
             </div>
-            <div class="job_img">
-                <a class="job_a" href=""><img src="./images/python.png"></a>
-                <a class="job_a" href=""><img src="./images/python.png"></a>
-                <a class="job_a" href=""><img src="./images/data.png"></a>
-                <a class="job_a" href=""><img src="./images/fe-list.png"></a>
-                <a class="job_a" href=""><img src="./images/java.png"></a>
-                <a class="job_a" href=""><img src="./images/ui.png"></a>
+            <div class="layui-row layui-card-body JobB">
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/java.png">
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/python.png">
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/ui.png">
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/fe-list.png">
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/java.png">
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 JobBody">
+                    <img src="./images/python.png">
+                </div>
             </div>
-        </nav>
+        </div>
         <!-- 微课区域 -->
+        <div class="layui-card TiClass">
+            <div class="layui-card-header JobText">
+                <div class="bdots"></div>
+                微课
+                <div class="bdots"></div>
+            </div>
+            <div class="layui-row layui-card-body TiB">
 
-        <nav class="tiny_class">
-            <div class="tiny_header">
-                <i></i> 微课区域
-                <i></i>
             </div>
-            <div class="tiny_img">
-                <!-- <a class="tiny_a" href=""><img src="./images/python.png">
-                    <h3 class="tiny_name">[前端]应用小程序</h3>
-                    <div class="tinyh">
-                        <h4 class="stunum">30人学习</h4>
-                        <h4 class="money">$999</h4>
-                    </div>
-                </a>
-                <a class="tiny_a" href=""><img src="./images/python.png">
-                    <h3 class="tiny_name">[前端]应用小程序</h3>
-                    <div class="tinyh">
-                        <h4 class="stunum">30人学习</h4>
-                        <h4 class="money">$999</h4>
-                    </div>
-                </a>
-                <a class="tiny_a" href=""><img src="./images/python.png">
-                    <h3 class="tiny_name">[前端]应用小程序</h3>
-                    <div class="tinyh">
-                        <h4 class="stunum">30人学习</h4>
-                        <h4 class="money">$999</h4>
-                    </div>
-                </a>
-                <a class="tiny_a" href=""><img src="./images/python.png">
-                    <h3 class="tiny_name">[前端]应用小程序</h3>
-                    <div class="tinyh">
-                        <h4 class="stunum">30人学习</h4>
-                        <h4 class="money">$999</h4>
-                    </div>
-                </a> -->
-            </div>
-        </nav>
+        </div>
     </div>
-    <!-- 底部区域 -->
-    <div class="footer">
-        <a class="fooindex" href="./index.html"><img src="./images/首页.png" alt=""><span>首页</span></a>
-        <a class="foofenlei" href="./category.html"><img src="./images/fenlei.png" alt=""><span>分类</span></a>
+    <!-- footer区域 -->
+    <div class="layui-fluid footer">
+
+        <div class="fooin">
+            <a href="./index.html">
+                <img src="./images/首页.png">
+                <div>首页</div>
+            </a>
+        </div>
+        <div class="foofen">
+            <a href="./category.html">
+                <img src="./images/fenlei.png">
+                <div>分类</div>
+            </a>
+        </div>
+
     </div>
     <script type="text/html" id="tinyA">
         {{each data}}
-        <a class="tiny_a" href=""><img src="{{$value.img}}">
-            <h3 class="tiny_name">{{$value.name}}</h3>
-            <div class="tinyh">
-                <h4 class="stunum">{{$value.count}}</h4>
-                <h4 class="money">{{$value.price}}</h4>
+        <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 TiBody">
+            <div class="TiBodyImg">
+                <img src="{{$value.img}}">
             </div>
-        </a>
+            <div class="TiBoText">{{$value.name}}</div>
+            <div class="layui-row TiBonum">
+                <div class="layui-col-xs5 layui-col-sm5 layui-col-md5 study">
+                    {{$value.count}}
+                </div>
+                <div class="layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-xs-offset3 layui-col-xs-sm3 layui-col-md-offset3 price">
+                    {{$value.price}}
+                </div>
+            </div>
+        </div>
         {{/each}}
     </script>
-    <script src="./js/jquery.js"></script>
     <script src="./js/template-web.js"></script>
+    <script src="./layui/layui.all.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
